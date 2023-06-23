@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: auto;
+    font-family: 'Teko', sans-serif;
+    box-sizing: border-box;
+}
+
+/* main styling starts here */
+.main {
+    margin: auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.main-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+p.main-container-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.button {
+    color: #fff;
+    background-color: #6B83FF;
+    padding: 7px 40px 7px 40px;
+    font-size: 1.5em;
+    box-shadow: 7px 10px #000;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 7px 40px 7px 40px;
+    font-size: 1.5em;
+    box-shadow: 7px 10px #000;
+    text-decoration: none;
+}
+
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.story-one {
+    /* background-color: #f1f1f1; */
+    padding: 5px;
+    flex: 40%;
+    text-align: left;
+}
+  
+.story-two {
+    /* background-color: #f1f1f1; */
+    padding: 5px;
+    flex: 40%;
+    text-align: left;
+}
+
+.story-image {
+    width: 70%;
+    height: auto;
+}
+
+.story-title {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+/* main styling ends here */
+
+@media only screen and (max-width:640px) {
+    .link {
+        display: none;
+    }
+
+    .story-one {
+        margin-top: 30px;
+        padding: 5px;
+        flex: 40%;
+        text-align: center;
+    }
+
+    .story-two {
+        margin-top: 30px;
+        padding: 5px;
+        flex: 40%;
+        text-align: center;
+    }
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width:640px) {
+    .story-one, .story-two {
+      flex: 100%;
+    }
+}
