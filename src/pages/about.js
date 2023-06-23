@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Navbar from './components/navbar'
 import Main from './components/main'
+import Footer from './components/footer'
 
 const AboutPage = () => {
     return(
@@ -15,6 +16,7 @@ const AboutPage = () => {
                     </p>
                 </div>
             </Main>
+            <Footer />
         </>
     )
 }

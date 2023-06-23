@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Navbar from './components/navbar'
 import Main from './components/main'
+import Footer from './components/footer'
 
 const IndexPage = () => {
   return(
@@ -14,6 +15,7 @@ const IndexPage = () => {
             <a href="#" class="button">JOIN</a>
         </div>
       </Main>
+      <Footer />
     </>
   )
 }

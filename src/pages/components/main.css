@@ -51,6 +51,10 @@ p.main-container-text {
     text-align: justify;
 }
 
+.stories-container {
+    margin-bottom: 100px;
+}
+
 .story-one {
     /* background-color: #f1f1f1; */
     padding: 5px;
@@ -75,6 +79,10 @@ p.main-container-text {
     padding-bottom: 10px;
 }
 
+.footer {
+    display: none;
+}
+
 /* main styling ends here */
 
 @media only screen and (max-width:640px) {
@@ -82,24 +90,45 @@ p.main-container-text {
         display: none;
     }
 
-    .story-one {
-        margin-top: 30px;
-        padding: 5px;
-        flex: 40%;
-        text-align: center;
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        font-size: 1.5em;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        background-color: #fff;
     }
 
-    .story-two {
-        margin-top: 30px;
-        padding: 5px;
-        flex: 40%;
-        text-align: center;
+    .footer-ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .footer-li {
+        padding-right: 20px;
+    }
+
+    .footer-a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .footer-a:hover {
+        border-bottom: 3px solid #6B83FF;
     }
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width:640px) {
     .story-one, .story-two {
-      flex: 100%;
+        margin-top: 30px;
+        padding: 5px;
+        flex: 100%;
+        text-align: center;
     }
 }
